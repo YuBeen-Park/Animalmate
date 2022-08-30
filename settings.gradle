@@ -1,0 +1,2 @@
+rootProject.name='AnimalMate'
+include ':app'

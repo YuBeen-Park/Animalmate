@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenu">
+
+
+    <LinearLayout
+        android:id="@+id/main_linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editText_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="도시명/병원이름을 입력하세요"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/mainmenu_searchbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:text="검색"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/menuRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/main_linear1"
+        android:layout_above="@+id/main_linear2"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        android:layout_above="@+id/main_linear2"/>
+
+    <LinearLayout
+        android:id="@+id/main_linear2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/mapbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#A860ADB8"
+            android:text="지도"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/weatherbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#A860ADB8"
+            android:text="날씨지수"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/communitybtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#A860ADB8"
+            android:text="커뮤니티"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/mypagebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#A860ADB8"
+            android:text="마이 페이지"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

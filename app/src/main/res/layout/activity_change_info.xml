@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="30dp"
+    android:orientation="vertical"
+    tools:context=".ChangeInfoActivity">
+
+    <EditText
+        android:id="@+id/change_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:hint="@string/signup_id"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/change_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:hint="@string/signup_name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/change_pw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:hint="@string/change_pw"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/change_newpw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:hint="@string/change_newpw"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/change_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:hint="@string/signup_phone"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/change_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:hint="@string/signup_email"
+        android:inputType="textEmailAddress" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/change_insert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="#A860ADB8"
+            android:text="저장" />
+
+        <Button
+            android:id="@+id/change_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="#A860ADB8"
+            android:text="취소" />
+    </LinearLayout>
+</LinearLayout>
